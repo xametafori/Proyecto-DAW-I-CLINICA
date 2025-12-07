@@ -8,8 +8,8 @@ import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2025-12-06T21:20:13-0500",
-    comments = "version: 1.6.3, compiler: javac, environment: Java 22 (Oracle Corporation)"
+    date = "2025-12-06T22:02:31-0500",
+    comments = "version: 1.6.3, compiler: javac, environment: Java 21.0.8 (Eclipse Adoptium)"
 )
 @Component
 public class CitaMedicaMapperImpl implements CitaMedicaMapper {
