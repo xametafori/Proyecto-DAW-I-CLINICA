@@ -1,6 +1,6 @@
-DROP DATABASE IF EXISTS clinica;
-CREATE DATABASE clinica;
-USE clinica;
+DROP DATABASE IF EXISTS railway;
+CREATE DATABASE railway;
+USE railway;
 
 -- ===============================
 -- TABLA PACIENTE
@@ -202,9 +202,9 @@ CREATE TABLE ingreso_medicamento (
 CREATE INDEX idx_paciente_dni ON paciente(dni);
 CREATE INDEX idx_medico_cmp ON medico(cmp);
 CREATE INDEX idx_proveedor_ruc ON proveedor(ruc);
-CREATE INDEX idx_usuario_nombre ON usuario(nombreUsuario);
+CREATE INDEX idx_usuario_nombre ON usuario(username);
 
-USE clinica;
+USE railway;
 
 
 -- ===========================================
@@ -239,10 +239,10 @@ VALUES
 -- ===============================
 INSERT INTO usuario (username, email, password_hash, nombre, apellido, activo)
 VALUES
-    ('admin', 'admin@empresa.com', '$2a$10$neJ49B5F/bS/3BmoAuEOGe/YEUgRroeWGaxJTC.f5n8RJVZhXY2OG', 'Miguel', 'Moreno', TRUE),
-    ('rrhh', 'rrhh@empresa.com', '$2a$10$neJ49B5F/bS/3BmoAuEOGe/YEUgRroeWGaxJTC.f5n8RJVZhXY2OG', 'Recursos', 'Humanos', TRUE),
-    ('recepcion', 'recepcion@empresa.com', '$2a$10$neJ49B5F/bS/3BmoAuEOGe/YEUgRroeWGaxJTC.f5n8RJVZhXY2OG', 'Recepcion', 'FrontDesk', TRUE),
-    ('gerente', 'gerente@empresa.com', '$2a$10$neJ49B5F/bS/3BmoAuEOGe/YEUgRroeWGaxJTC.f5n8RJVZhXY2OG', 'Gerente', 'General', TRUE);
+    ('admin', 'admin@empresa.com', '$2a$10$vHXK9kYSIOpkpKd9I.wwiOHCTG74gHLMDiS1KXW86I9hq9drkzxLO', 'Mercedes', 'Mantari', TRUE),
+    ('rrhh', 'rrhh@empresa.com', '$2a$10$vHXK9kYSIOpkpKd9I.wwiOHCTG74gHLMDiS1KXW86I9hq9drkzxLO', 'Recursos', 'Humanos', TRUE),
+    ('recepcion', 'recepcion@empresa.com', '$2a$10$vHXK9kYSIOpkpKd9I.wwiOHCTG74gHLMDiS1KXW86I9hq9drkzxLO', 'Recepcion', 'FrontDesk', TRUE),
+    ('gerente', 'gerente@empresa.com', '$2a$10$vHXK9kYSIOpkpKd9I.wwiOHCTG74gHLMDiS1KXW86I9hq9drkzxLO', 'Gerente', 'General', TRUE);
 
 -- tabla intermedia UsuarioRol
 
